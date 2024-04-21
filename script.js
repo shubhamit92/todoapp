@@ -36,6 +36,7 @@ function rendertodo(){
     let checkboxdiv=document.createElement('input');
     checkboxdiv.type='checkbox';
     checkboxdiv.classList.add('todo-done');
+    checkboxdiv.setAttribute('id','todo-done');
     let bcontentdiv=document.createElement('div');
     bcontentdiv.classList.add('body-content');
     let titlediv=document.createElement('p');
@@ -45,11 +46,28 @@ function rendertodo(){
     let datediv=document.createElement('p');
     datediv.classList.add('date');
     let spandiv=document.createElement('span');
+    spandiv.setAttribute('id','span');
     spandiv.innerHTML="\u00d7";
+    spandiv.classList.add('d-none')
+   
+  
+    checkboxdiv.addEventListener('click',(event)=>{
+        if (event.target.checked) {
+            spandiv.classList.add('span');
+            spandiv.classList.remove('d-none');
+        } else {
+            spandiv.classList.remove('span');
+            spandiv.classList.add('d-none');
+        }
+    });
+
 
     spandiv.addEventListener('click',()=>{
         deletetask(index);
     })
+
+   
+    
 
 
     //dataadding

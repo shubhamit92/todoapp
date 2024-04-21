@@ -36,12 +36,15 @@ body{
   
    
 }
-.todo span{
+.span{
     margin-left: 450px;
     font-size: 20px;
     position: absolute;
     cursor: pointer;
     
+}
+.d-nonee{
+    display: none;
 }
 
 
