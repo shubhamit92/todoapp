@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My todo app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-display">
+            <div class="todo-header">
+                <h2 class="header-title">MY todo</h2>
+                <div class="no-todo" id="no-todo">
+                    <img src="img1.png" alt="">
+                    <h3>Add your new task here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, reiciendis ratione alias ullam mollitia molestiae.</p>
+                   </div>
+            </div>
+            <div class="todo-body" id="todo-body">
+               
+                 <!-- <div class="todo">
+                    <input type="checkbox" class="todo-done">
+                   <div class="body-content">
+                      <p class="body-title">tomorrow class timinig 8:00pm</p>
+                      <p class="body-desc">Lorem ipsum dolor sit amet.</p>
+                      <p class="date">18 april</p>
+                    </div>
+                </div> 
+                <div class="todo">
+                    <input type="checkbox" class="todo-done">
+                   <div class="body-content">
+                      <p class="body-title">tomorrow class timinig 8:00pm</p>
+                      <p class="body-desc">Lorem ipsum dolor sit amet.</p>
+                      <p class="date">18 april</p>
+                    </div>
+                </div>  -->
+                
+            </div>
+            
+        </div>
+        <div class="add-todo">
+            <input type="text" class="add-title" id="add-title" placeholder="Enter the title">
+            <input type="text" class="add-desc" id="add-desc" placeholder="Enter the description">
+            <div class="flex">
+                
+                 <input type="text" class="due-date" id="date" placeholder="due date"onfocus="(this.type='date')">
+                <button class="btn" onclick="todoadd()">Add task</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

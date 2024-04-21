@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(236, 227, 227);
+   
+}
+.todo-display{
+    width: 600px;
+    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+  
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px;
+}
+.add-todo{
+    width: 600px;
+    border: 1px solid lightgray;
+    background-color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: -45px auto;
+    border-radius: 10px;
+
+}
+.todo{
+    display: flex;
+     align-items: baseline;
+    border-bottom: 1px solid lightgrey;
+    padding: 12px 20px;
+    position: relative;
+  
+   
+}
+.todo span{
+    margin-left: 450px;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    
+}
+
+
+
+.todo-done{
+    margin-top: 5px;
+}
+
+.todo-header{
+    padding: 15px 20px;
+    
+}
+.header-title{
+    font-weight: 300;
+}
+
+.body-content{
+    margin-left: 15px;
+    margin-top: -50px;
+}
+.body-title{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.body-desc{
+    font-size: 13px;
+    color: rgb(65, 62, 62);
+
+}
+.date{
+    color: rgb(252, 7, 7);
+    font-size: 15px;
+}
+.add-title,.add-desc{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.add-desc{
+    font-size: 13px;
+}
+.due-date{
+    border: 1px solid lightgrey;
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+
+}
+.no-todo{
+    padding: 20px;
+    text-align: center;
+}
+.no-todo img{
+    height: 200px;
+}
+.no-todo p{
+    color: lightgray;
+    font-size: 12px;
+
+}
+
+.d-none{
+    display: none;
+}
+
+.todo-done:checked+.body-content{
+    background-color: rgb(228, 228, 12);
+    color: white;
+    padding: 0 15px;
+}
+
+.todo-done:checked+.body-content>.body-title{
+    text-decoration: line-through;
+}
+
+.due-date{
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
